@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #020212;
+  color: white;
+}
+
+#about {
+  padding: 50px 0px 0px 20px;
+}
+
+#about h5,
+h6 {
+  padding: 5px 0px 0px 20px;
+  color: #e1a02e;
+}
+
+.row {
+  justify-content: center;
+}
+
+div {
+  text-align: center;
+}
+
+#central {
+  padding-right: 60px;
+}
+
+.lifeline img {
+  width: 50px;
+  margin: 0 15px 5px 15px;
+}
+
+.help {
+  border: none;
+}
+
+.help:hover {
+  border: none;
+}
+
+span {
+  float: left;
+  padding: 0 15px;
+  background-color: transparent;
+  color: #e1a02e;
+  font-weight: 600;
+}
+
+.text-question {
+  color: white;
+}
+
+#question {
+  padding: 30px 0px 40px 0px;
+  background-image: url(../img/quest.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#question:hover {
+  background-image: url(../img/quest_answer.png);
+  color: white;
+}
+
+.btn-group {
+  background-color: transparent;
+  border: none;
+}
+
+#question label:hover {
+  color: white;
+}
+
+.btn-group.btn-group-toggle {
+  background-color: transparent;
+  border: none;
+}
+
+.btn.question {
+  color: white;
+}
+
+#answer-group {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 340px 340px;
+  grid-column-gap: 0px;
+  grid-row-gap: 15px;
+}
+
+.btn.answer {
+  color: white;
+  background-image: url(../img/quest.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+}
+
+.btn.answer:hover,
+.btn.answer:active {
+  background-image: url(../img/quest_answer.png);
+}
+
+button:focus {
+  outline: none !important;
+}
+
+.text-answer {
+  padding: 0px 12px;
+  font-weight: 500;
+  color: white;
+}
+
+.btn-secondary.answer {
+  margin: 0px 10px;
+  background-color: transparent;
+  border: none;
+  border-radius: 7px;
+  background-image: url(../img/quest.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 150px;
+}
+
+.grid-container {
+  margin-top: 30px;
+  margin-left: -25px;
+}
+
+.grid-item {
+  text-align: left;
+  line-height: 1.8;
+  color: #e1a02e;
+  font-weight: 600;
+  padding-left: 50px;
+}
+
+.level {
+  color: white;
+}
+
+.money-level {
+  background-image: url(../img/step_activ.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  margin-right: 35px;
+}
+
+#completed {
+  background-color: #ffe11c;
+  border-radius: 12px;
+  margin: 14px 0;
+  padding: 7px 15px;
+  color: black;
+  font-weight: 500;
+}
+
+.modal h5 {
+  color: #e1a02e;
+}
+
+#winningModal h5 {
+  padding-top: 20px;
+}
+
+#btn-playing {
+  background-color: #e1a02e;
+  color: black;
+}
+
+@media only screen and (max-width: 700px) {
+  .grid-item {
+    text-align: center;
+  }
+}

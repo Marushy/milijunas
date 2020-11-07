@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tko zeli biti milijunas</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png" />
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Bootstrap css link -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Left section -->
+        <div class="col-md-2 col-sm-12 text-sm-center" id="about">
+          <h5>"Tko želi biti milijunas?"</h5>
+          <h6>Besplatna online Bosanska verzija</h6>
+        </div>
+        <!-- Central section -->
+		<!-- Logo section -->
+        <div class="col-md-8 col-sm-12" id="central">
+          <div>
+            <img src="img/logo.jpg" />
+          </div>
+		  <!-- Lifeline section -->
+          <div class="lifeline">
+            <button class="help" id="helpAudience"><img src="img/help1.png"/></button>
+            <button class="help" id="helpCall"><img src="img/help2.webp"/></button>
+            <button class="help" id="helpFifty"><img src="img/help3.webp"/></button>
+          </div>
+
+			<!-- Main content -->
+          <div class="container">
+            <div class="row" id="question">
+              <div class="btn-group ">
+                <label class="btn question">
+                  <p>
+                    <span class="question-id"></span>
+                    <span class="text-question"> </span>
+                  </p>
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="btn-group btn-group-toggle"
+                id="answer-group"
+                data-toggle="buttons"
+              >
+                <label class="btn answer ">
+                  <input
+                    type="radio"
+                    name="options"
+                    value="a"
+                    id="option1"
+                    autocomplete="off" 
+                  /><span class="text-id">A.</span
+                  ><span class="text-answer" id="answerA"> </span>
+                </label>
+                <label class="btn answer">
+                  <input
+                    type="radio"
+                    name="options"
+                    value="b"
+                    id="option2"
+                    autocomplete="off"
+                  />
+                  <span class="text-id">B.</span><span class="text-answer" id="answerB"> </span>
+                </label>
+
+                <label class="btn answer">
+                  <input
+                    type="radio"
+                    name="options"
+                    value="c"
+                    id="option3"
+                    autocomplete="off"
+                  />
+                  <span class="text-id">C.</span><span class="text-answer" id="answerC"> </span>
+                </label>
+                <label class="btn answer">
+                  <input
+                    type="radio"
+                    name="options"
+                    value="d"
+                    id="option4"
+                    autocomplete="off"
+                  />
+                  <span class="text-id">D.</span><span class="text-answer" id="answerD"> </span>
+                </label>
+              </div>
+            </div>
+            <button type="submit" id="completed" class="btn">
+              Konacan odgovor
+            </button>
+          </div>
+        </div>
+        <!-- Right section -->
+        <div class="col-md-2 col-sm-12 ">
+          <div class="grid-container ">
+            <div id="14"class="grid-item level ">15. 1 000 000 KM</div>
+            <div id="13" class="grid-item">14. 500 000 KM</div>
+            <div id="12" class="grid-item">13. 250 000 KM</div>
+            <div id="11"class="grid-item">12. 100 000 KM</div>
+            <div id="10" class="grid-item">11. 50 000 KM</div>
+            <div id="9" class="grid-item level">10. 30 000 KM</div>
+            <div id="8" class="grid-item">9. 10 000 KM</div>
+            <div id="7" class="grid-item">8. 5000 KM</div>
+            <div id="6" class="grid-item">7. 2000 KM</div>
+            <div id="5" class="grid-item">6. 1000 KM</div>
+            <div id="4" class="grid-item level">5. 500 KM</div>
+            <div id="3" class="grid-item">4. 200 KM</div>
+            <div id="2" class="grid-item">3. 100 KM</div>
+            <div id="1" class="grid-item">2. 50 KM</div>
+            <div id="0" class="grid-item money-level">1. 10 KM</div>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	
+
+    <!-- Modal opening-->
+    <div
+      class="modal fade"
+      id="openingModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Dobrodosli na kviz "Tko zeli biti milijunas?"
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Igra kviz "Tko želi biti milijunaš" tražena je zabava svih
+              ljubitelja kvizova. Sada kad ste konačno pronašli vašu omiljenu
+              milijunaš igru postanite milijunaš i pokažite kako svi želimo biti
+              milijunaš. Koliko je vaše znanje i može li igra milijunaš pokazati
+              vaše prave vrijednosti isprobajte igrajući ovaj kviz.
+            </p>
+			
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal" id="playQuiz">
+              Zaigrajmo milijunasa
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal right answer-->
+    <div
+      class="modal fade"
+      id="playingModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Cestitamo. Vas odgovor je tacan i igra se nastavlja</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+			        id="btn-playing"
+              data-dismiss="modal"
+            >
+              Sljedece pitanje :)
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	<!-- Modal wrong answer-->
+    <div
+      class="modal fade"
+      id="wrongModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Vas odgovor je pogresan i nazalost igra je zavrsena. Vise srece drugi put :)</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+			        id="btn-playing"
+              data-dismiss="modal"
+            >
+             Zaigraj kviz ponovo :) 
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal winning-->
+    <div
+      class="modal fade"
+      id="winningModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img
+              src="img/champagne.png"/>
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Cestitamo. Upravo ste postali mijijunas.
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	<!-- Modal help audience-->
+    <div
+      class="modal fade"
+      id="audienceModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Trazili ste pomoc publike. Evo kako su oni glasali:
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>odgovor A : <b>15%</b></p>
+            <p>odgovor B : <b>55%</b></p>
+            <p>odgovor C : <b>25%</b></p>
+            <p>odgovor D : <b>5%</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	<!-- Modal help call-->
+    <div
+      class="modal fade"
+      id="callModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Trazili ste pomoc zovi prijatelja. Evo odgovora:
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Nisam sigurna, mozda A ili D,<b> ipak D, nekih 60%.</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
